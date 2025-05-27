@@ -26,3 +26,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse("Email trimis!")
     except Exception as e:
         return func.HttpResponse(f"Eroare: {str(e)}", status_code=500)
+
+
+{
+  "to_email": "cineva@email.com",
+  "subject": "Test email",
+  "message": "Salut!"
+}
